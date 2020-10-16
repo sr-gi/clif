@@ -49,7 +49,7 @@ def _find_clif_modules() -> typing.Iterable[extension.CLIFExtension]:
         module_name, clif_sources, include_dirs=['./'],
         libraries=libraries,
         library_dirs=[module_dir],
-        extra_compile_args=['std=c++17'])
+        extra_compile_args=['-std=c++17'])
 
     modules.append(clif_extension)
   return modules
