@@ -27,6 +27,11 @@ name: Examples
 
 on:
   workflow_dispatch:
+  pull_request:
+  push:
+    paths:
+    - 'examples/**'
+
 
 jobs:
   standard:
